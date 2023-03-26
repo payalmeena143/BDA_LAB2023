@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration form</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* .container{
+            height:800px;
+            width:550px;
+            
+            padding:5px 20px 15px 20px;
+            
+            border-radius: 4px;
+        } */
+        /* h2{
+        
+            color:blue;
+        } */
+       
+        
+    </style>
+</head>
+
+<body style="background-color: #0F172B;">
+    <div class="container-fluid bg-dark px-0">
+        <div class="row gx-0">
+            <div class="col-lg-3  d-none d-lg-block" style="background-color: #0F172B;">
+                
+                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <img src="img/iiita.png" style="height: 60px; width:60px; margin-right: 50px;">
+                    <h1 class="m-0  text-uppercase" style="font-family: poppins;color:#3acbc4; text-align: left; margin-left: 50px; font-family: 'Poppins';">BDA LAB</h1>
+                </a>
+            </div>
+            <div class="col-lg-9">
+              
+                <nav class="navbar navbar-expand-lg  navbar-dark p-3 p-lg-0" style="background-color: #0F172B;">
+                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 text-primary text-uppercase" style="text-align: left; margin-left: 50px; font-family: 'Poppins';">BDA LAB</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarcollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active" style="margin-left: 450px;">Home</a>
+                            <!-- <a href="#about1" class="nav-item nav-link" style="margin-left:50px;">About Us</a> -->
+                            <a href="index.html " class="nav-item nav-link" style="margin-left:50px ;">Contact Us</a>
+                            <!-- <a href="#programdetail1" class="nav-item nav-link" style="margin-left: 50px;">Program Details</a> -->
+                           
+                            
+                        </div>
+                       
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <h2 style="color:white;">Register Here </h2>
+    <h6 style="color:white;margin-left: 90px;">Already a member?<a href="userlogin.html">Login</a></h6>
+    <div class="login">
+    <form id="login" method="get" action="login.php">
+        <!-- <p style="color:white;">Required fields are followed by *</p> -->
+        <label><b>Name</b></label>
+        <br>
+        <input type="name" name="name" id="name" placeholder="Your Name">
+<br><br>
+        <label><b>Email Id:</b></label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Email Id">
+        <br><br>
+        <label><b>Password</b></label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+        <label><b>Confirm Password</b></label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+       
+        <label><b>Choose Delegate:</b></label>
+            <select name="Delegate_type"id="Delegate_type"placeholder="Please choose Delegate type" required>
+                
+                <option value="--Select Delegate type-">Select Delegate type</option> 
+                <option value="Indian">Indian</option>
+                <option value="Foreign">Foreign</option>
+            
+            </select>
+    <br>
+    <br>
+        <input type="button" name="log" id="log" value="Sign Up" style="background-color: aqua; color:black">
+        <input type="button" name="log1" id="log1" value="Proceed to pay" href="https://apply.iiita.ac.in/event/register/" style="background-color: aqua; color:black;margin-left:20px;">
+        <br><br>
+        <h5 style="color:white;">Chnage user?</h3>
+    </form>
+</div>
+
+    <!-- <div class="container-fluid bg-dark px-0">
+        <div class="row gx-0">
+            <div class="col-lg-3  d-none d-lg-block" style="background-color: #0F172B;">
+                
+                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <h1 class="m-0  text-uppercase" style="font-family: poppins;color:#3acbc4; text-align: left; margin-left: 50px;">BDA LAB</h1>
+                </a>
+            </div>
+            <div class="col-lg-9">
+              
+                <nav class="navbar navbar-expand-lg  navbar-dark p-3 p-lg-0" style="background-color: #0F172B;">
+                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 text-primary text-uppercase" style="text-align: left; margin-left: 50px;">BDA LAB</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarcollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active" style="margin-left: 450px;">Home</a>
+
+                            <a href="index.html " class="nav-item nav-link" style="margin-left:50px ;">Contact Us</a>
+
+                           
+                            
+                        </div>
+                       
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div> -->
+    
+    <!-- <div class="container">
+        <form action="/action.php">
+        
+        <p>Required fields are followed by *</p>
+        <h2>User Information</h2>
+            
+        <p>Name:*<input type="text"name="name" placeholder="Enter your name"required></p>
+
+        <p>Email Id:<input type="email"name="email"id="email"placeholder="abc@gmail.com"required></p>
+        <p>Password:*<input type="password"name="password"id="password"placeholder="abc****"required></p>
+        <p>Confirm Password:*<input type="password"name="password"id="password"placeholder="abc****"required></p>
+        <p>Pincode:*<input type="number"name="pincode"id="pincode"required></p>
+        <p>
+            Choose Delegate:
+            <select name="Delegate_type"id="Delegate_type"placeholder="Please choose Delegate type"required>
+                
+                <option value="--Select Delegate type-">Select Delegate type</option> 
+                <option value="Indian">Indian</option>
+                <option value="Foreign">Foreign</option>
+            
+            </select>
+        </p>
+        <button style="border-radius: 50%;background-color: rgb(237, 144, 234);">Sign up</button>
+        <br>
+        <br>
+
+        <button style="border-radius: 2px;background-color: rgb(237, 144, 234);"><a href="https://apply.iiita.ac.in/event/register/">Proceed to pay</a> </button>
+        </form>
+        </div> -->
+</body>
+</html>
