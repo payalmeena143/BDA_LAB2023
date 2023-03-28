@@ -33,6 +33,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
+   
     body,html{
     scroll-behavior: smooth;
       width: 100%;
@@ -42,8 +43,7 @@
     
     /* body{
      margin: 0; 
-     width:100%;
-     height:100%;
+     
 } */
     
 </style>
@@ -65,15 +65,15 @@
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
                     <!-- <a class="navbar-brand" href="#"><img src="img/iiita.png" style="height: 50px; width:50px;"></a> -->
                     <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <img src="img/iiita.png" style="height: 60px; width:60px; margin-right: 50px;">
-                        <h1 class="m-0  text-uppercase" style="font-family: 'Poppins';color:#3acbc4;">BDA LAB</h1>
+                        <!-- <img src="img/iiita.png" style="height: 60px; width:60px; margin-right: 50px;"> -->
+                        <h1 class="m-0  text-uppercase" style="font-family: 'Poppins';color:#3acbc4;"><span class="auto-text">BDA LAB</span></h1>
                     </a>           
                 </div>
                 <div class="col-lg-9">
                   
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                         <a href="index.html" class="navbar-brand d-block d-lg-none">
-                            <h1 class="m-0 text-primary text-uppercase" style="font-family: 'Poppins';">BDA LAB</h1>
+                            <h1 class="m-0 text-primary text-uppercase" style="font-family: 'Poppins';"><span class="auto-text">BDA LAB</span></h1>
                         </a>
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
@@ -562,7 +562,15 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     </section>
-    
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script>
+        var typed=new Typed(".auto-text",{
+            strings:["BDA LAB"],
+            typeSpeed:400,
+            backSpeed:400,
+            loop:true
+        })
+    </script>
 </body>
 
 </html>
