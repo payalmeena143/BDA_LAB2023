@@ -20,7 +20,7 @@
     bottom: 45px;
     z-index: 99;
 }
-
+ 
 
 /*** Spinner ***/
 #spinner {
@@ -495,3 +495,4 @@
     padding-right: 0;
     border-right: none;
 }
+

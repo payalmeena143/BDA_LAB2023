@@ -35,6 +35,7 @@ body
         margin-left:70px;
         padding: 20px;
         text-align: left;
+        /* text-align: center; */
         /* background: #23463f; */
         /* border-radius: 15px ; */
 
@@ -50,6 +51,14 @@ h2{
 label{
     color: #08ffd1;
     font-size: 17px;
+}
+
+#name{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 8px;
 }
 #email{
     width: 300px;
