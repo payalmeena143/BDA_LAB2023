@@ -40,29 +40,15 @@
       height:100%;
 }
         
-    /* added */
-    /* body{
-     margin-left: auto; 
-     margin-right: auto;
-     visibility: collapse;
-     
-}
-@media only screen and (max-width:100%){
-    body{
-
-    visibility: collapse;
-}
-} */
-/* till this */
     
 </style>
 <body>
     
-    <section class="payal">
+    <section >
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <div class="spinner-border text-primary" style="color:#3acbc4;width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
@@ -78,6 +64,7 @@
                         <h1 class="m-0  text-uppercase" style="font-family: 'Poppins';color:#3acbc4;"><span class="auto-text">BDA LAB</span></h1>
                     </a>           
                 </div>
+                
                 <div class="col-lg-9">
                   
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
@@ -89,10 +76,26 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarcollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="index.html" class="nav-item nav-link active" style="margin-left: 450px;">Home</a>
-                                <a href="#about1" class="nav-item nav-link" style="margin-left:50px;">About Us</a>
-                                <a href="#contact1" class="nav-item nav-link" style="margin-left:50px ;">Contact Us</a>
-                                <a href="#programdetail1" class="nav-item nav-link" style="margin-left: 50px;">Program Details</a>
+                                <a href="index.html" class="nav-item nav-link active" style="margin-left: 40px;">Home</a>
+                                <a href="#about1" class="nav-item nav-link" style="margin-left:40px;">About Us</a>
+                                <a href="#contact1" class="nav-item nav-link" style="margin-left:40px ;">Contact Us</a>
+                                <a href="#programdetail1" class="nav-item nav-link" style="margin-left: 40px;">Program Details</a>
+                                <a  href="members.html"class="nav-item nav-link" style="margin-left: 40px;">Lab Members</a>
+                                <a  href="projects.html"class="nav-item nav-link" style="margin-left: 40px;">Projects</a>
+                                <!-- <a href="courses.html" class="nav-item nav-link" style="margin-left: 50px;">Courses</a> -->
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;margin-left:50px;">
+                                      Courses
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item" href="deeplearning.html">Deep Learning</a></li>
+                                      <li><a class="dropdown-item" href="visualRecog.html">Visual Recognization</a></li>
+                                      <li><a class="dropdown-item" href="imageandvid.html">Image and Video Processing</a></li>
+                                      <li><hr class="dropdown-divider"></li> 
+                                      
+                                     </ul>
+                                  </li>
                                
                                 
                             </div>
@@ -106,8 +109,10 @@
 
 
         <!-- Carousel Start -->
+       
         <div class="container-fluid p-0 mb-6">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="w-100" src="img/iiita3.jpg" alt="Image">
@@ -166,36 +171,7 @@
                             addressing the problems related to big data analytics as well as case studies and practical experiences
                             with big data.
                             BDA 2023 will include keynotes, invited talks, tutorials, workshops, panel discussions and research papers.</p>
-                        <!-- <div class="row g-3 pb-4">
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Rooms</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Staffs</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="border rounded p-1">
-                                    <div class="border rounded text-center p-4">
-                                        <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">1234</h2>
-                                        <p class="mb-0">Clients</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a> -->
+                        
                     </div>
                     <div class="col-lg-6">
                         <div class="row g-3">
@@ -237,7 +213,7 @@
                 <div class="col-md-6">
                     <div class="video">
                         <!-- <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/watch?v=4Q6DBksABgc" data-bs-target="#videoModal"> -->
-                            <iframe width="660" height="630" src="https://www.youtube.com/embed/4Q6DBksABgc">
+                            <iframe width="660" height="660" src="https://www.youtube.com/embed/4Q6DBksABgc">
                                 <!-- https://www.youtube.com/embed/tgbNymZ7vqY,https://www.youtube.com/watch?v=tgbNymZ7vqY&t=59s -->
                             </iframe>
                             <span></span>
@@ -272,7 +248,7 @@
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s" id="programdetail1">
                     <h6 class="section-title text-center  text-uppercase" style="color:#3acbc4;font-size: xx-large; font-family: 'Poppins';">Program Details</h6>
-                    <!-- <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1> -->
+
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -283,7 +259,7 @@
                                 </div>
                             </div>
                             <h5 class="mb-3">View Program Overview</h5>
-                            <!-- <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p> -->
+
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
@@ -508,21 +484,23 @@
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container pb-5">
+            <div class="col-md-6 col-lg-4" style="margin-left :420px;">
+                <div class=" rounded p-4" style="background-color: #3acbc4;">
+                    <a href="index.html"><h1 class="text-black text-uppercase mb-3" style="font-family: 'Poppins';">BDA LAB 2023</h1></a>
+                    <p class=" mb-0" style="color:black">
+                        For more information visit the BDA Lab
+                    </p>
+                </div>
+            </div>
+            <div class="container pb-5" >
                 <div class="row g-5">
-                    <div class="col-md-6 col-lg-4">
-                        <div class=" rounded p-4" style="background-color: #3acbc4;">
-                            <a href="index.html"><h1 class="text-black text-uppercase mb-3" style="font-family: 'Poppins';">BDA LAB 2023</h1></a>
-                            <p class=" mb-0" style="color:black">
-								For more information visit the BDA Lab
-							</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3" id="contact1">
-                        <h6 class="section-title text-start text-uppercase mb-4" style="color:#3acbc4">Contact</h6>
+                    
+                    <div class="col-md-6 col-lg-3" id="contact1" style="margin-left:420px;">
+                        <br>
+                        <h6 class="section-title text-start text-uppercase mb-4" style="color:#3acbc4;font-family: 'Poppins';">Contact</h6>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> Indian Institute of Information Technology Allahabad, Jhalwa, Prayagraj, Uttar Pradesh 211015</p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+091699 46022</p>
-                        <p class="mb-2"><a class="fa fa-envelope me-3" href="https://iiita.ac.in" ></a>iiita.ac.in</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3" href="iiita.ac.in" ></i>iiita.ac.in</p>
                         
                     </div>
                   
@@ -531,12 +509,7 @@
             <div class="container">
                 <div class="copyright">
                     <div class="row">
-                        <!-- <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                        </div> -->
+                        
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
                                 <a href="">Home</a>
