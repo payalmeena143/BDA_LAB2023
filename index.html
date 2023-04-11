@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BDA Lab</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+   
+    html,body{
+    scroll-behavior: smooth;
+      width: 100%;
+      height:100%;
+    }
+    a:link,a:visited,a:active,a:hover {
+        color: #2fb5ae;;
+        background-color: transparent;
+        text-decoration: none;
+    }         
+    
+</style>
+<body>
+    
+    <section >
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="color:#3acbc4;width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <!-- <a class="navbar-brand" href="#"><img src="img/iiita.png" style="height: 50px; width:50px;"></a> -->
+                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <!-- <img src="img/iiita.png" style="height: 60px; width:60px; margin-right: 50px;"> -->
+                        <h1 class="m-0  text-uppercase" style="font-family: 'Poppins';color:#3acbc4;"><span class="auto-text">BDA LAB</span></h1>
+                    </a>           
+                </div>
+                
+                <div class="col-lg-9">
+                  
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0 text-primary text-uppercase" style="font-family: 'Poppins';"><span class="auto-text">BDA LAB</span></h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarcollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link active" style="margin-left: 15px;">Home</a>
+                                <a href="index.html#about1" class="nav-item nav-link" style="margin-left:15px;">About Us</a>
+                                <a href="index.html#contact1" class="nav-item nav-link" style="margin-left:15px ;">Contact Us</a>
+                                <a href="index.html#programdetail1" class="nav-item nav-link" style="margin-left: 15px;">Program Details</a>
+                                <a href="members.html" class="nav-item nav-link" style="margin-left: 15px;">Lab Members</a>
+                                <a href="members.html" class="nav-item nav-link" style="margin-left: 15px;">Events</a>
+                                <a href="projects.html" class="nav-item nav-link" style="margin-left: 15px;">Projects</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;margin-left:20px;margin-right:30px;">
+                                      Courses
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item" href="deeplearning.html">Deep Learning</a></li>
+                                      <li><a class="dropdown-item" href="visualRecog.html">Visual Recognization</a></li>
+                                      <li><a class="dropdown-item" href="imageandvid.html">Image and Video Processing</a></li>
+                                      <li><hr class="dropdown-divider"></li> 
+                                      
+                                     </ul>
+                                </li>
+                                <a href="publications.html" class="nav-item nav-link" style="margin-left: 15px;">Publications</a>
+                                <a href="researcher.html" class="nav-item nav-link" style="margin-left: 15px;margin-right:10px;">Researchers</a>
+                                
+                               
+                                
+                            </div>
+                           
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Carousel Start -->
+       
+        <div class="container-fluid p-0 mb-6">
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="img/iiita3.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 700px;">
+                                <h3 class="section-title text-white text-uppercase mb-3 animated slideInDown">IIIT Allahabad</h3>
+                                <h6 class="display-3 text-white mb-4 animated slideInDown" style="font-size:xxx-large;font-family: 'Poppins';">The International Confrence On Big Data Analytics 2023</h6>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/iiita2.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 700px;">
+                                <h3 class="section-title text-white text-uppercase mb-3 animated slideInDown">IIIT Allahabad</h3>
+                                <h4 class="display-3 text-white mb-4 animated slideInDown" style="font-size: xx-large; font-family: 'Poppins';">BDA LAB</h4>
+                                <a href="registration.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" style="color:black;background-color:  aqua;">Registration</a>
+                                <a href="login.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight" style="background-color: aqua;">Log in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+       
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6" id="about1">
+                        <h6 class="section-title text-start  text-uppercase" style="color:#3acbc4">About Us</h6>
+                        <h1 class="mb-4">Welcome to <span class=" text-uppercase" style="color:#3acbc4; font-family: 'Poppins';">BDA LAB 2023</span></h1>
+                        <p class="mb-4" style="font-family:  Georgia, serif;">The conference on Big Data Analytics (2023)will be organized by Indian Institute of Information Technology
+                            Allahabad, India. BDA 2023 provides an international forum for researchers and industry practitioners to
+                            share their original research results, practical experiences and thoughts on big data from different
+                            perspectives including storage models, data access, computing paradigms, analytics, information sharing
+                            and privacy, redesigning mining algorithms, open issues and future research trends. The conference on Big
+                            Data Analytics invites original, technically sound, high-quality research papers proposing novel solutions
+                            addressing the problems related to big data analytics as well as case studies and practical experiences
+                            with big data.
+                            BDA 2023 will include keynotes, invited talks, tutorials, workshops, panel discussions and research papers.</p>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/con1.png" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/con4.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/con3.jpeg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/con2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+       
+        
+
+
+        <!-- Video Start -->
+        <div class="container-xxl py-5 px-0 wow zoomIn" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5">
+                        <h6 class="section-title text-start text-white text-uppercase mb-3" style="font-family: 'Poppins';">Past BDA Conerence</h6>
+                        <h1 class="text-white mb-4" style="font-family: 'Poppins';">Discover IIITA Allahabad</h1>
+                        <p class="text-white mb-4"> The conference will be organized by Indian Institute of Information Technology Allahabad, India. BDA  provides an international forum for researchers and industry practitioners to share their original research results, practical experiences and thoughts on big data from different perspectives including storage models, data access, computing paradigms, analytics, information sharing and privacy, redesigning mining algorithms, open issues and future research trends.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video">
+                        <!-- <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/watch?v=4Q6DBksABgc" data-bs-target="#videoModal"> -->
+                            <iframe width="630" height="630" src="https://www.youtube.com/embed/4Q6DBksABgc">
+                                <!-- https://www.youtube.com/embed/tgbNymZ7vqY,https://www.youtube.com/watch?v=tgbNymZ7vqY&t=59s -->
+                            </iframe>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=AIiyvVNnYNs" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Start -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s" id="programdetail1">
+                    <h6 class="section-title text-center  text-uppercase" style="color:#3acbc4;font-size: xx-large; font-family: 'Poppins';">Program Details</h6>
+
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-80 h-80  d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-school fa-2x " style="color:#3acbc4"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">View Program Overview</h5>
+
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100  d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-users fa-2x" style="color:#3acbc4"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">View Commitee</h5>
+                            <!-- <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p> -->
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100  d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-calendar fa-2x " style="color:#3acbc4;"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">View Program Format</h5>
+                            <!-- <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p> -->
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100  d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-folder-open fa-2x " style="color:#3acbc4;"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">View Past BDA Conference</h5>
+                            <!-- <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p> -->
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100  d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-user fa-2x " style="color:#3acbc4;"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">View Keynote and Invited Talk Details</h5>
+                            <!-- <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p> -->
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100  d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-comments fa-2x " style="color:#3acbc4"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">View Panel Discussion Details</h5>
+                            <!-- <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p> -->
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100  d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-edit fa-2x " style="color:#3acbc4;"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">View Tutorials Details</h5>
+                            <!-- <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p> -->
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100  d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-cogs fa-2x " style="color:#3acbc4"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">View Workshop Details</h5>
+                            <!-- <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p> -->
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100  d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-search fa-2x " style="color:#3acbc4"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">View Research Session Details</h5>
+                            <!-- <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="owl-carousel testimonial-carousel py-5">
+                    <div class="testimonial-item position-relative  rounded overflow-hidden" style="background-color: #ccf4f2;">
+                        <p>Laboratory of Artificial Intelligence and Decision Support, and Faculty of Economics, University of Porto, Porto, Portugal.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/ProfJoao.jpeg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Prof. Joao Gama</h6>
+                                <small>Keynote Speaker</small>
+                            </div>
+                        </div>
+                        
+                        <i class="fa fa-quote-right fa-3x  position-absolute end-0 bottom-0 me-4 mb-n1" style="color:#3acbc4"></i>
+                    </div>
+                    <div class="testimonial-item position-relative rounded overflow-hidden" style="background-color: #ccf4f2;">
+                        <p>LTCI, Télécom Paris, Data, Intelligence and Graphs Team, 19 place Marguerite Perey, 91120
+                            Palaiseau, France.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/ProfAlbert.jpeg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Prof. Albert Bifet:</h6>
+                                <small>Keynote Speaker</small>
+                            </div>
+                        </div>
+                       
+                        <i class="fa fa-quote-right fa-3x  position-absolute end-0 bottom-0 me-4 mb-n1" style="color:#3acbc4"></i>
+                    </div>
+                    <div class="testimonial-item position-relative  rounded overflow-hidden" style="background-color:#ccf4f2">
+                        <p>Department of Computer Engineering, National Institute of Technology Karnataka, Surathkal,
+                            India.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/ProfAshoke.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Prof. Asoke K Talukder</h6>
+                                <small>Keynote Speaker</small>
+                            </div>
+                        </div>
+                        
+                        
+                        <i class="fa fa-quote-right fa-3x  position-absolute end-0 bottom-0 me-4 mb-n1" style="color:#3acbc4"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center  text-uppercase" style="font-size: xx-large; color:#3acbc4;font-family: 'Poppins';">Supporting Organization</h6>
+                    <!-- <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1> -->
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/Ahemdabad.png" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                   
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Ahmedabad University</h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/Hyderabad_Logo.png" alt="">
+                                <div class="position-r start-50 top-100 translate-middle d-flex align-items-center">
+                                    <div class="position-absolute top-0 end-50 translate-middle d-flex align-items-center "></div>
+                                    <!-- <div class="position-absolute top-0 start-0"></div> -->
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">University Of Hyderabad</h5>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/Kurukshetra.png" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">NIT Kurukshetra</h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/iiitDelhi.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">IIIT- Delhi</h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <br>
+        <br>
+        <br>
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-md-6 col-lg-4" style="margin-left :420px;">
+                <div class=" rounded p-4" style="background-color: #3acbc4;">
+                    <a href="index.html"><h1 class="text-black text-uppercase mb-3" style="font-family: 'Poppins';">BDA LAB 2023</h1></a>
+                </div>
+            </div>
+            <div class="container pb-5" >
+                <div class="row g-5">
+                    
+                    <div class="col-md-6 col-lg-3" id="contact1" style="margin-left:420px;">
+                        <br>
+                        <h6 class="section-title text-start text-uppercase mb-4" style="color:#3acbc4;font-family: 'Poppins';">Contact</h6>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> Indian Institute of Information Technology Allahabad, Jhalwa, Prayagraj, Uttar Pradesh 211015</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+091699 46022</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3" href="iiita.ac.in" ></i>iiita.ac.in</p>
+                        
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+<!--comment-->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg  btn-lg-square back-to-top" style="background-color: #3acbc4;color:black;"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script>
+        var typed=new Typed(".auto-text",{
+            strings:["BDA LAB"],
+            typeSpeed:400,
+            backSpeed:400,
+            loop:true
+        })
+    </script>
+</body>
+
+</html>
